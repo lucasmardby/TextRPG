@@ -1,0 +1,14 @@
+E:\Code\TextRPG\bin\Debug\net6.0\TextRPG.exe
+E:\Code\TextRPG\bin\Debug\net6.0\TextRPG.deps.json
+E:\Code\TextRPG\bin\Debug\net6.0\TextRPG.runtimeconfig.json
+E:\Code\TextRPG\bin\Debug\net6.0\TextRPG.dll
+E:\Code\TextRPG\bin\Debug\net6.0\TextRPG.pdb
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.AssemblyInfoInputs.cache
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.AssemblyInfo.cs
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.csproj.CoreCompileInputs.cache
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.dll
+E:\Code\TextRPG\obj\Debug\net6.0\refint\TextRPG.dll
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.pdb
+E:\Code\TextRPG\obj\Debug\net6.0\TextRPG.genruntimeconfig.cache
+E:\Code\TextRPG\obj\Debug\net6.0\ref\TextRPG.dll
