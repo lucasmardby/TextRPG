@@ -4,27 +4,42 @@
     {
         static void Main(string[] args)
         {
-            Random dice = new Random();
+            Opening opening = new Opening();
 
-            int heroHP = 10;
-            int monsterHP = 10;
+            opening.MainMenu();
 
-            do
+            Console.WriteLine("We out");
+
+
+
+
+
+
+            void OldCode()
             {
-                int roll = dice.Next(1, 11);
-                monsterHP -= roll;
-                Console.WriteLine($"Monster takes {roll} damage, and has {monsterHP} health remaining.");
+                Random dice = new Random();
 
-                if (monsterHP <= 0)
-                    continue;
+                int heroHP = 10;
+                int monsterHP = 10;
 
-                roll = dice.Next(1, 11);
-                heroHP -= roll;
-                Console.WriteLine($"Hero takes {roll} damage, and has {heroHP} health remaining.");
+                do
+                {
+                    int roll = dice.Next(1, 11);
+                    monsterHP -= roll;
+                    Console.WriteLine($"Monster takes {roll} damage, and has {monsterHP} health remaining.");
+
+                    if (monsterHP <= 0)
+                        continue;
+
+                    roll = dice.Next(1, 11);
+                    heroHP -= roll;
+                    Console.WriteLine($"Hero takes {roll} damage, and has {heroHP} health remaining.");
+                }
+                while (heroHP > 0 && monsterHP > 0);
+
+                Console.WriteLine(heroHP > monsterHP ? "Hero wins!" : "Monster wins!");
             }
-            while (heroHP > 0 && monsterHP > 0);
-
-            Console.WriteLine(heroHP > monsterHP ? "Hero wins!" : "Monster wins!");
         }
     }
+
 }
