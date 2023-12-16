@@ -13,8 +13,7 @@
             Console.WriteLine();
             Console.WriteLine("RPG Game".ToUpper());
             Console.WriteLine();
-            Console.WriteLine("\tStart game [1]");
-            Console.WriteLine();
+            Console.WriteLine("Start game [1]");
             Console.WriteLine();
             Console.WriteLine("Enter your selection number and press Enter.");
         }
@@ -22,15 +21,14 @@
         {
             while (true)
             {
-                string readResult;
                 string menuSelection = "";
 
                 StartScreen();
 
-                readResult = Console.ReadLine();
+                string readResult = Console.ReadLine();
                 if (readResult.IsNotNullOrEmpty())
                 {
-                    menuSelection = readResult.ToLower();
+                    menuSelection = readResult;
                 }
                 switch (menuSelection)
                 {
@@ -63,9 +61,26 @@
                 }
 
             } while (true);
-            */ //Name Add
+            */ //Character Name??
+
+            Items items = new Items();
+            items.StarterItems();
+
+        }
 
 
+        private void LogoTest()
+        {
+            /*
+                              _                 _
+                     /\      | |               | |                 
+                    /  \   __| |_   _____ _ __ | |_ _   _ _ __ ___ 
+                   / /\ \ / _` \ \ / / _ \ '_ \| __| | | | '__/ _ \
+                  / ____ \ (_| |\ V /  __/ | | | |_| |_| | | |  __/
+                 /_/    \_\__,_| \_/ \___|_| |_|\__|\__,_|_|  \___|
+
+
+                */
         }
 
     }
