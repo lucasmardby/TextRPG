@@ -2,7 +2,23 @@
 {
     public class Opening
     {
-        public void MainMenu()
+        public void StartGame()
+        { 
+            MainMenu();
+            GameOpening();
+        }
+        private static void StartScreen()
+        {
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("RPG Game".ToUpper());
+            Console.WriteLine();
+            Console.WriteLine("\tStart game [1]");
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("Enter your selection number and press Enter.");
+        }
+        private static void MainMenu()
         {
             while (true)
             {
@@ -19,7 +35,7 @@
                 switch (menuSelection)
                 {
                     case "1":
-                        Console.WriteLine("Start!");
+                        Console.Clear();
                         return;
                     default:
                         Console.WriteLine("Try again, friend. Pick a number.");
@@ -27,20 +43,29 @@
                         break;
                 }
             };
-
         }
-
-        private static void StartScreen()
+        private void GameOpening()
         {
             Console.Clear();
+            Console.WriteLine("You find yourself by the opening of a cave.");
+            Helper.ConfirmationButton();
 
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.WriteLine("\t\t\tRPG Game".ToUpper());
-            Console.WriteLine();
-            Console.WriteLine("\t\t\tStart game [1]");
-            Console.WriteLine();
-            Console.WriteLine("Enter your selection number");
+            /*
+            string characterName;
+            Console.WriteLine("What is your name?");
+            do
+            {
+                characterName = Console.ReadLine();
+                if (characterName.IsNotNullOrEmpty())
+                {
+                    Console.WriteLine(characterName);
+                    return characterName;
+                }
+
+            } while (true);
+            */ //Name Add
+
+
         }
 
     }
