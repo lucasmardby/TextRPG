@@ -14,6 +14,7 @@
             Console.WriteLine("RPG Game".ToUpper());
             Console.WriteLine();
             Console.WriteLine("Start game [1]");
+            Console.WriteLine("Test function (BossRandomizer) [9]");
             Console.WriteLine();
             Console.WriteLine("Enter your selection number and press Enter.");
         }
@@ -35,6 +36,11 @@
                     case "1":
                         Console.Clear();
                         return;
+                    case "9":
+                        Boss boss = new Boss();
+                        boss.BossRandomizer();
+                        Helper.ConfirmationButton();
+                        break;
                     default:
                         Console.WriteLine("Try again, friend. Pick a number.");
                         Helper.ConfirmationButton();
@@ -65,6 +71,13 @@
 
             Items items = new Items();
             items.StarterItems();
+
+            Boss boss = new Boss();
+            //boss.BossRandomizer();
+
+
+
+
 
         }
 

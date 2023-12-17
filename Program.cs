@@ -4,11 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Opening opening = new Opening(); 
+            Opening opening = new Opening();
             opening.StartGame();
-            
-
-
 
 
 

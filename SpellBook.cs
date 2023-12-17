@@ -2,7 +2,7 @@
 {
     public class SpellBook
     {
-        List<string> currentSpells = new List<string>();
+        public List<string> currentSpells = new List<string>();
 
 
     }
